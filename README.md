@@ -62,6 +62,42 @@ Some of these components are optional or exchangeable. Instead of a key, the mai
 
 ![observer_mouse_circuit](./media/observer_mouse_circuit.jpg)
 
+## Lens Considerations
+
+Image quality and viability is determined by the lens. With a sensor size of 3mm x 1.7mm in video mode the full frame equivalent crop factor equals 12.5. Using a 50mm lens for example results in an image that looks like a 625mm lens with a full frame sensor. Further modification can be realized with variation of the back focus distance. To make the bot work properly, the image should cover between 2cm and 6cm in height of the monitor center (smaller monitors with higher pixel density may require a smaller section). A working combination for example is a 50mm lens, 30cm in front of a 27" monitor with approximately 22mm back focus distance as seen in the overview image. The default back focus distance for the RP HQ Camera is 12.8mm. In the following a comparison of different lenses with different back focus distances is showcased. The macro extension is achieved by stacking C-CS adapters between lens and sensor, with the original RP HQ Camera adapter adding 5.8mm and every further adapter 5mm to the distance (the total back focus distance is calculated as the default 12.8mm plus the macro extension). The distance between lens and monitor is labeled as _s_.
+
+![observer_lens_setup](./media/observer_lens_setup.png)
+
+To compare colors and detail I used this image. The scale in centimeters is shown as it appeared on my monitor (WQHD, 27") when I took the sample images. For every setup there are three images with the focus being slightly changed (bottom, middle and top).
+
+![picasso](./media/picasso.jpg)
+
+Differences in the images are a consequence of lens quality (chromatic aberration), focus settings (blurry images have more vibrant colors when filming LCDs), view angle (which is obviously different when changing focal length and camera position), monitor brightness and colors, environment lighting and sensor sensitivity (ISO).
+
+### Canon FD 50mm 1:1.8
+
+This is the recommended type of lens (50mm prime lens with a maximum aperture of 1:1.x), together with two macro extension rings (the lower row images). A modern Canon EF 50mm f/1.8 STM works too but has no manual focus ring. The same applies for other high quality lens manufacturers (Sony, Nikon, Zeiss, etc.).
+
+![lens_canon_50mm](./media/lens_canon_50mm.jpg)
+
+### Sigma 24mm 1:1.4 DG HSM
+
+Using a 24mm lens still works but the section becomes quite big. The low aperture of 1:1.4 in this example however allows to lower the sensors ISO significantly, resulting in less noise which can be useful if the monitor has poor brightness capabilities.
+
+![lens_sigma_24mm](./media/lens_sigma_24mm.jpg)
+
+### C Mount 8-50mm Zoom Lens
+
+This is a cheap no-name lens that is fiddly to use but works. The ISO has to be increased and LCD inflicted distortions are clearly visible. 
+
+![lens_zoom](./media/lens_zoom.jpg)
+
+### C Mount 6mm Lens
+
+A focal length of 6mm is what is commonly used for webcams. It does not work for the bot, the monitor section is far too big. Focusing it is tough, hence there are only two sample images for this lens.
+
+![lens_6mm](./media/lens_6mm.jpg)
+
 ## Setup
 
 Clone the repository:
